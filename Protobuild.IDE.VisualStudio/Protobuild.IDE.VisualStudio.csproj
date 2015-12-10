@@ -52,7 +52,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CrossPlatformPackage.cs" />
-    <Compile Include="CrossPlatformProjectWizard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +62,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Protobuild.Icon.ico">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\CrossPlatformPackage.ico" />
     <VSCTCompile Include="Protobuild.IDE.VisualStudio.vsct" />
   </ItemGroup>
@@ -181,6 +187,15 @@
       <MergeWithCTO>true</MergeWithCTO>
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Protobuild.IDE.VisualStudio.Wizard\Protobuild.IDE.VisualStudio.Wizard.csproj">
+      <Project>{CF51F24C-DD96-4825-B9BD-8684B4208B63}</Project>
+      <Name>Protobuild.IDE.VisualStudio.Wizard</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

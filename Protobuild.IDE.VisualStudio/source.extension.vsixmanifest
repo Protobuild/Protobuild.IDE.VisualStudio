@@ -4,7 +4,7 @@
     <Identity Id="org.protobuild.visualstudio" Version="1.0" Language="en-US" Publisher="June Rhodes" />
     <DisplayName>Protobuild for Visual Studo</DisplayName>
     <Description xml:space="preserve">Provide services for cross-platform projects in Visual Studio.</Description>
-    <License>MIT license</License>
+    <License>LICENSE.txt</License>
     <GettingStartedGuide>https://protobuild.readthedocs.org/en/latest/getting_started_gui.html</GettingStartedGuide>
     <Icon>Protobuild.Icon.ico</Icon>
   </Metadata>
@@ -16,7 +16,7 @@
     <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%.Wizard" Path="|Protobuild.IDE.VisualStudio.Wizard|" AssemblyName="|Protobuild.IDE.VisualStudio.Wizard;AssemblyName|" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
   </Assets>
 </PackageManifest>
