@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------------------------
-// <copyright file="ModuleExplorerPackage.cs" company="Company">
+// <copyright file="CrossPlatformPackage.cs" company="Company">
 //     Copyright (c) Company.  All rights reserved.
 // </copyright>
 //------------------------------------------------------------------------------
@@ -37,21 +37,19 @@ namespace Protobuild.IDE.VisualStudio
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
-    [ProvideMenuResource("Menus.ctmenu", 1)]
-    [ProvideToolWindow(typeof(ModuleExplorer))]
-    [Guid(ModuleExplorerPackage.PackageGuidString)]
+    [Guid(CrossPlatformPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    public sealed class ModuleExplorerPackage : Package
+    public sealed class CrossPlatformPackage : Package
     {
         /// <summary>
-        /// ModuleExplorerPackage GUID string.
+        /// CrossPlatformPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "fbc90f7a-91de-48bc-b5be-226b311abfb2";
+        public const string PackageGuidString = "e3556644-2e00-4616-8507-15e3cd889588";
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ModuleExplorer"/> class.
+        /// Initializes a new instance of the <see cref="CrossPlatformPackage"/> class.
         /// </summary>
-        public ModuleExplorerPackage()
+        public CrossPlatformPackage()
         {
             // Inside this method you can place any initialization code that does not require
             // any Visual Studio service because at this point the package object is created but
@@ -67,10 +65,7 @@ namespace Protobuild.IDE.VisualStudio
         /// </summary>
         protected override void Initialize()
         {
-            ModuleExplorerCommand.Initialize(this);
             base.Initialize();
-            Protobuild.IDE.VisualStudio.NewCrossPlatformProject.Initialize(this);
-            Protobuild.IDE.VisualStudio.OpenCrossPlatformProject.Initialize(this);
         }
 
         #endregion
