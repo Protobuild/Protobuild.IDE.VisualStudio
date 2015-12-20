@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="org.protobuild.visualstudio" Version="1.0" Language="en-US" Publisher="June Rhodes" />
-    <DisplayName>Protobuild for Visual Studo</DisplayName>
+    <DisplayName>Protobuild for Visual Studio</DisplayName>
     <Description xml:space="preserve">Provide services for cross-platform projects in Visual Studio.</Description>
     <License>LICENSE.txt</License>
     <GettingStartedGuide>https://protobuild.readthedocs.org/en/latest/getting_started_gui.html</GettingStartedGuide>
