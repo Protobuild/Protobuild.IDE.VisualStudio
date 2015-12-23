@@ -1,6 +1,10 @@
 #version 1
 
 if host Windows
+  
+  set build-process-arch x86
+  set build-property DeployExtension false
+
   generate
   build
 
