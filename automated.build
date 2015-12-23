@@ -11,6 +11,6 @@ if host Windows
   pack . $TARGET_PLATFORM.tar.lzma $TARGET_PLATFORM Build/filter.txt
 
   if file-exists C:\Users\build\Documents\protobuild_api_key.txt
-    push C:\Users\build\Documents\protobuild_api_key.txt $TARGET_PLATFORM.tar.lzma http://protobuild.org/hach-que/Protoinject $GIT_COMMIT $TARGET_PLATFORM $GIT_BRANCH --ignore-on-existing
+    push C:\Users\build\Documents\protobuild_api_key.txt $TARGET_PLATFORM.tar.lzma http://protobuild.org/hach-que/Protobuild.IDE.VisualStudio $GIT_COMMIT $TARGET_PLATFORM $GIT_BRANCH --ignore-on-existing
   endif
 endif
