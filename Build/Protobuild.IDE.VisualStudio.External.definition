@@ -3,6 +3,6 @@
 
   <Binary 
     Name="Protobuild.IDE.VisualStudio"
-    Path="VSNoVSIX/Protobuild.IDE.VisualStudio.Wizard.dll" />
+    Path="NoVSIX/Protobuild.IDE.VisualStudio.Wizard.dll" />
   
 </ExternalProject>

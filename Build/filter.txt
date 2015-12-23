@@ -4,6 +4,6 @@ include ^Build/Protobuild\.IDE\.VisualStudio\.External\.definition$
 rewrite ^Build/Protobuild\.IDE\.VisualStudio\.External\.definition$ Build/Projects/Protobuild.IDE.VisualStudio.definition
 
 include ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$
-rewrite ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$ VS2015/$1
+rewrite ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$ VSIX/$1
 include ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$
-rewrite ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$ VSNoVSIX/$1
+rewrite ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$ NoVSIX/$1
