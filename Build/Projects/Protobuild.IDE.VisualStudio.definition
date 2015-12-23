@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalProject Name="Protobuild.IDE.VisualStudio">
+
+  <Project 
+    Name="Protobuild.IDE.VisualStudio"
+    Guid="CD7FDE0D-CDB4-4C97-ADC5-49A7B8349CA6"
+    Path="Protobuild.IDE.VisualStudio/Protobuild.IDE.VisualStudio.csproj" />
+  <Project 
+    Name="Protobuild.IDE.VisualStudio.Wizard"
+    Guid="CF51F24C-DD96-4825-B9BD-8684B4208B63"
+    Path="Protobuild.IDE.VisualStudio.Wizard/Protobuild.IDE.VisualStudio.Wizard.csproj" />
+  
+</ExternalProject>

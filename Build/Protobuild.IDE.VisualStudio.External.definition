@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalProject Name="Protobuild.IDE.VisualStudio">
+
+  <Binary 
+    Name="Protobuild.IDE.VisualStudio"
+    Path="VSNoVSIX/Protobuild.IDE.VisualStudio.Wizard.dll" />
+  
+</ExternalProject>
