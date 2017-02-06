@@ -10,7 +10,7 @@ if host Windows
 
   set package-format nuget/zip
 
-  pack . Protobuild.IDE.VisualStudio.$TARGET_PLATFORM.nupkg $TARGET_PLATFORM Build/filter.txt
+  pack . Protobuild.IDE.VisualStudio.$TARGET_PLATFORM.nupkg $TARGET_PLATFORM Build/filter.txt --package-type global-tool
 
   if file-exists C:\Users\build\Documents\nuget_api_key.txt
     push C:\Users\build\Documents\nuget_api_key.txt Protobuild.IDE.VisualStudio.$TARGET_PLATFORM.nupkg https://www.nuget.org/api/v2/package --ignore-on-existing --package-type global-tool
