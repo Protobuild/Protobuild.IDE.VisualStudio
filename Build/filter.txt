@@ -2,9 +2,9 @@ autopackage
 
 include ^Build/Protobuild\.IDE\.VisualStudio\.External\.definition$
 
-rewrite ^Build/Protobuild\.IDE\.VisualStudio\.External\.definition$ protobuild/Build/Projects/Protobuild.IDE.VisualStudio.definition
+rewrite ^Build/Protobuild\.IDE\.VisualStudio\.External\.definition$ protobuild/Windows/Build/Projects/Protobuild.IDE.VisualStudio.definition
 
 include ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$
-rewrite ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$ protobuild/VSIX/$1
+rewrite ^Protobuild\.IDE\.VisualStudio/bin/Debug/(.*)$ protobuild/Windows/VSIX/$1
 include ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$
-rewrite ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$ protobuild/NoVSIX/$1
+rewrite ^Protobuild\.IDE\.VisualStudio.Wizard/bin/Debug/(.*)$ protobuild/Windows/NoVSIX/$1
