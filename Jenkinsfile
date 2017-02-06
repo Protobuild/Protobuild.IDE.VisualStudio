@@ -1,4 +1,8 @@
 #!/usr/bin/env groovy
-@Library('Protobuild.JenkinsHelpers@0.2')
-import protobuild
-protobuild()
+stage("Windows") {
+  node('windows') {
+    checkout poll: false, changelog: false, scm: scm
+    bat ("Protobuild.exe --upgrade-all")
+    bat ('Protobuild.exe --automated-build')
+  }
+}
