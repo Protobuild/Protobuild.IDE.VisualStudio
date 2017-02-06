@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Module>
   <Name>Protobuild.IDE.VisualStudio</Name>
+  <Authors>.NET Foundation</Authors>
+  <Description>The Visual Studio extension for Protobuild.  This is installed automatically by the Protobuild Manager.</Description>
+  <LicenseUrl>https://opensource.org/licenses/MIT</LicenseUrl>
+  <ProjectUrl>https://protobuild.org/</ProjectUrl>
+  <IconUrl>https://protobuild.org/favicon.png</IconUrl>
+  <GitRepositoryUrl>https://github.com/Protobuild/Protobuild.IDE.VisualStudio</GitRepositoryUrl>
   <DefaultAction>resync</DefaultAction>
   <GenerateNuGetRepositories>true</GenerateNuGetRepositories>
 </Module>

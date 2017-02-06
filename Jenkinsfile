@@ -1,4 +1,4 @@
 #!/usr/bin/env groovy
-@Library('Protobuild.JenkinsHelpers@0.1')
+@Library('Protobuild.JenkinsHelpers@0.2')
 import protobuild
-protobuild('Protobuild.IDE.VisualStudio', 'https://github.com/Protobuild/Protobuild.IDE.VisualStudio')
+protobuild()
