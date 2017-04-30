@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="org.protobuild.visualstudio" Version="1.0" Language="en-US" Publisher="June Rhodes" />
+    <Identity Id="org.protobuild.visualstudio" Version="1.1.2" Language="en-US" Publisher="June Rhodes" />
     <DisplayName>Protobuild for Visual Studio</DisplayName>
     <Description xml:space="preserve">Provide services for cross-platform projects in Visual Studio.</Description>
     <License>LICENSE.txt</License>
@@ -20,4 +20,7 @@
     <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%.Wizard" Path="|Protobuild.IDE.VisualStudio.Wizard|" AssemblyName="|Protobuild.IDE.VisualStudio.Wizard;AssemblyName|" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
   </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>
