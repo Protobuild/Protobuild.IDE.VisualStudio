@@ -6,6 +6,7 @@ if host Windows
   set build-property DeployExtension false
 
   generate
+  nuget restore
   build
 
   set package-format nuget/zip
