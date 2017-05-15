@@ -4,5 +4,10 @@
   <Binary 
     Name="Protobuild.IDE.VisualStudio"
     Path="NoVSIX/Protobuild.IDE.VisualStudio.Wizard.dll" />
+  <GAC 
+    Name="Protobuild.IDE.VisualStudio"
+    Path="NoVSIX/Protobuild.IDE.VisualStudio.Wizard.dll" />
+  <VSIX
+    Path="VSIX/Protobuild.IDE.VisualStudio.vsix" />
   
 </ExternalProject>
