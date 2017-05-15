@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ExternalProject Name="Protobuild.IDE.VisualStudio">
+<ExternalProject Name="Protobuild.IDE.VisualStudio" SkipAutopackage="True">
 
   <Project 
     Name="Protobuild.IDE.VisualStudio"
